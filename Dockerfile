@@ -2,7 +2,7 @@
 FROM ubuntu:latest
 
 # Install dependences
-RUN apt update; apt install snap
+RUN apt update; apt install snapd -y
 RUN snap install drawio
 
 # Try
