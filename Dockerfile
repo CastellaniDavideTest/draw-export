@@ -1,4 +1,11 @@
 # Container image that runs your code
-FROM jgraph/drawio:latest
+FROM ubuntu:latest
 
-CMD drawio -h
+# Install dependences
+RUN sudo apt update; sudo apt install snap
+RUN sudo snap install drawio
+
+# Try
+RUN drawio --version
+
+# CMD drawio -h
