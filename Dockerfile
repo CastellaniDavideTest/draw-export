@@ -5,6 +5,7 @@ FROM ubuntu:latest
 RUN apt-get update
 RUN apt-get install -y snapd
 RUN systemctl enable snapd
+RUN snap install drawio
 
 # Try
 RUN drawio --version
