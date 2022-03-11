@@ -2,8 +2,8 @@
 FROM ubuntu:latest
 
 # Install dependences
-RUN sudo apt update; sudo apt install snap
-RUN sudo snap install drawio
+RUN apt update; apt install snap
+RUN snap install drawio
 
 # Try
 RUN drawio --version
